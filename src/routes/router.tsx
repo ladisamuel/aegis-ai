@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import DefaultLayout from './layout/DefaultLayout'
 // import AuthLayout from './layout/AuthLayout'
 import HomePage from '../pages/HomePage'
+import DocPage from '../pages/DocPage'
 
 // Lazy imports for future pages (code splitting)
 // const LoginPage = () => import('@/pages/LoginPage').then(m => ({ default: m.default }))
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
     element: <DefaultLayout />,
     children: [
       { path: '/', element: <HomePage /> },
+      { path: '/docs', element: <DocPage /> },
     ],
   },
   // {
